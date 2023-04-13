@@ -18,7 +18,7 @@ def random_problem():
 
 def ask_question():
     answer = random_problem()
-    guess = float(input('Enter you answer: '))
+    guess = float(input('Enter your answer: '))
     return guess == answer
 
 def game():
@@ -26,10 +26,10 @@ def game():
     while True:
         if ask_question() == True:
             score += 1
-            print('Correct !')
+            print('Correct!')
         else:
             print('Incorrect')
             break
-    print(f'======== Game Over ========\nYou score is {score}\nKepp going!')
+    print(f'======== Game Over ========\nYou score is {score}\nKeep going!')
 
 game()

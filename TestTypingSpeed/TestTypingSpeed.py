@@ -2,6 +2,7 @@ import time
 
 String='The quick brown fox jumps over the lazy dog.'
 wordcount=len(String.split())
+input("Press enter to start the typing test: ")
 
 while True:
     print(String)
@@ -25,13 +26,13 @@ while True:
         print("You are doing great!")
     elif accuracy <= 100 or wpm <= 100:
         print("You are a pro in typing!")
-    else:
+    elif accuracy == 100 and wpm <= 700:
         print("You are a typing machine!")
 
     if input("Do you want to try again? (y/n): ")=="n":
-        break
-    elif input("Do you want to try again? (y/n): ")=="y":
         continue
+    elif input("Do you want to try again? (y/n): ")=="y":
+        break
         
 
 
